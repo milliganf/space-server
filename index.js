@@ -16,9 +16,10 @@ let assign = {
 	"origin": "0, 0"
 }
 
-// app.get('/', (req, res) => {
-//   res.set("Access-Control-Allow-Origin", "*");
-// });
+app.get('/', (req, res) => {
+  res.set("Access-Control-Allow-Origin", "*");
+  res.send("Space Server Running");	
+});
 
 io.on("connection", (socket) => {
 	if(Object.keys(assign).length > 0){
