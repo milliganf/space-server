@@ -54,6 +54,6 @@ function write(text, tile){
   }
 }
 
-server.listen(process.env.PORT, () => {
-  console.log('listening on '+process.env.PORT);
+server.listen(80, () => {
+  console.log('listening on '+80);
 });
