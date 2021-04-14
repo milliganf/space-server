@@ -1,0 +1,11 @@
+---
+application:
+  name: "space-server"
+  project: "space-server"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-space-server"
+  routes:
+  - application_name: "space-server"
+    paths:
+    - "/*"
