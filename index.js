@@ -10,7 +10,7 @@ const io = require("socket.io")(server, {
 });
 
 let tiles = {
-  "0, 0": "1234567890123456789012345678901234567890"
+  "0, 0": "Click on squares to select them. Press k to get the key for a square. Press l to use a key."
 }
 let assign = {
 	"origin": "0, 0"
