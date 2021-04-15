@@ -4,7 +4,7 @@ const http = require('http');
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://space.fuzzius.repl.co",
+    origin: "https://inspace.glitch.me/",
     methods: ["GET", "POST"]
   }
 });
