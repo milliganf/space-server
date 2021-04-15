@@ -9,12 +9,18 @@ const io = require("socket.io")(server, {
   }
 });
 
-let tiles = {
-  "0, 0": "Click on squares to select them. Press k to get the key for a square. Press l to use a key."
-}
-let assign = {
-	"origin": "0, 0"
-}
+let tiles = {"0, 0":"Welcome to inSpace",
+	     "0, 1":"Use this text box to set the text in your selected square.",
+	     "0, 2":"Press 'k' to get the key of your selected square.",
+	     "1, 0":"Use the arrow keys to move around.",
+	     "1, 1":"Each square can only contain a maximum of 100 characters.",
+	     "1, 2":"If someone already got the key of a square, you cannot get it with 'k'.",
+	     "2, 0":"Use the wasd keys to move your selection box, or just click on squares to select them.",
+	     "2, 1":"To get back to a square, you can use its key.",
+	     "2, 2":"Press 'l' to use a key, and use the key 'origin' to get back here."}
+let assign = {"origin":"0, 0",
+	      "9sg91syZRYlBVkK2":"-127, 204",
+	      "YRRGL5Xzas-cvoTQ":"117, -177"}
 
 app.get('/', (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
