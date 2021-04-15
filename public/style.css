@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+}
+
+body{
+  background: rgb(42, 50, 71);
+}
+
+/* button{
+  position: relative;
+  bottom: 10px;
+} */
+
+textarea{
+  position: relative;
+  right: 130px;
+  margin-left: 10px;
+  width: 200px;
+  height: 100px;
+}
+
+input{
+  position: relative;
+  bottom: 110px;
+  left: 10px;
+}
