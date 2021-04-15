@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const server = http.createServer(app);
+const path = require("path");
 const io = require("socket.io")(server, {
   cors: {
     origin: "https://inspace.glitch.me/",
@@ -21,10 +22,11 @@ let tiles = {"0, 0":"Welcome to inSpace",
 let assign = {"origin":"0, 0",
 	      "9sg91syZRYlBVkK2":"-127, 204",
 	      "YRRGL5Xzas-cvoTQ":"117, -177"}
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
-  res.send("Space Server Running");	
+  res.sendFile(path.join(__dirname, "index.html"));	
 });
 
 io.on("connection", (socket) => {
