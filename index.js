@@ -5,7 +5,7 @@ const server = http.createServer(app);
 const path = require("path");
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://inspace.glitch.me/",
+    origin: "https://space-server.openode.io/",
     methods: ["GET", "POST"]
   }
 });
